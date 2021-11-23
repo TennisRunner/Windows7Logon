@@ -96,12 +96,15 @@ BOOL CALLBACK childCallback(HWND hwnd, LPARAM lParam)
     return TRUE;
 }
 
+
+
 DWORD mainThread(LPVOID lpParam)
 {
     Sleep(1000);
 
     DWORD startTime = GetTickCount();
-
+  
+    
     while (GetTickCount() - startTime < 10000)
     {
         Sleep(10);
