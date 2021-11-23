@@ -14,7 +14,7 @@ Only the LogonUI.exe process and proceses started by it will have access to the 
 From there, it sets focus to it and uses `SendInput` to simulate typing in the password and the return key.
 The dll has no error reporting so if anything goes wrong, you'll need to debug it yourself.
 
-After its attempt, it unloads the dll so it can be retried if nessesary. 
+After the attempt, it unloads the dll so it can be retried if nessesary. 
 
 # How to use it
 
