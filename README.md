@@ -21,3 +21,6 @@ After its attempt, it unloads the dll so it can be retried if nessesary.
 Inject the dll into the LogonUI.exe when the lock screen is shown.
 You can use `MemoryMapping`, `SetWindowsHook`, or `CreateRemoteThread` passing the file name address as the lparam, after writing the string 
 to an allocated page of process's memory. 
+
+There is a sample console project you can use.
+It locks the screen, then unlocks it 5 seconds later using the password you define in the sample.cpp file.
